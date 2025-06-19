@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <h2 class="mb-4 text-center">Blog page</h2>
+    <section>
+    <h2>Welcome to My Blog!</h2>
+    <p>
+        This blog is a personal space where I share ideas, tutorials, thoughts, and experiences on topics I’m passionate about.
+        Whether you're here to learn something new, explore interesting content, or just enjoy a good read — you’re in the right place!
+    </p>
+
+    <p>
+        Blogs are an excellent way to express yourself online, build a community, and share knowledge. 
+        You’ll find regular posts here covering various themes including technology, programming, personal development, and more.
+    </p>
+
+    <p>
+        Check out the latest posts below and feel free to dive into any topic that interests you. 
+        New content is added frequently, so be sure to visit often!
+    </p>
+</section>
+<div class="mt-4" >
+        <a href="/blog" class="btn btn-primary">Write</a>
+        <a href="/admin" class="btn btn-secondary">Admin Panel</a>
+        </div>
+{% endblock %}
+</body>
+</html>

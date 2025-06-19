@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <h2 class="mb-4 text-center">Blog page</h2>
+    <form method="post" action="/blog">
+        <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" name="title" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="content" class="form-label">Content</label>
+        <textarea name="content" class="form-control" rows="5" required></textarea>
+    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    {% endblock %}
+</body>
+</html>
